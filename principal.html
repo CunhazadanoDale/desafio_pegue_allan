@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Allan</title>
+    <link rel="stylesheet" href="src/styles/principal.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1> Você se arrisca? </h1>
+            <button><a href="index.html">Jogar</a></button>
+            <audio src="src/audios/allanzada.mp3"></audio>
+        </section>
+    </main>
+
+    <script>
+        const button = document.querySelector('button')
+        button.addEventListener('click', function() {
+            const audio = document.querySelector('audio')
+            audio.currentTime = 0
+            audio.play()
+        })
+    </script>
+</body>
+</html>
